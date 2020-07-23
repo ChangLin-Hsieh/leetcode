@@ -1,4 +1,4 @@
-Problem:
+/*Problem:
 
 Table: Person
 
@@ -27,7 +27,15 @@ Write a SQL query for a report that provides the following information for each 
 
 FirstName, LastName, City, State
 
-Solution: Left Join Two Tables
-select p.FirstName, p.LastName, a.City, a.State from Person p Left Join Address a on p.personId = a.personId;
+Solution: Left Join Two Tables*/
+
+select 
+  p.FirstName, 
+  p.LastName, 
+  a.City, 
+  a.State 
+from 
+Person p Left Join Address a 
+on p.personId = a.personId;
 
 
