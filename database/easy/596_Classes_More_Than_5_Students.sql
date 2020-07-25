@@ -26,5 +26,8 @@ Should output:
 | Math    |
 +---------+
 
-Solution:*/
-select class from courses group by class having count(class) >= 5
+Solution: count by distinc student*/
+select class 
+from courses 
+group by class 
+having count(distinct student) >= 5
